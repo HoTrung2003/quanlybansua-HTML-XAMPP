@@ -1,0 +1,124 @@
+nav {
+  background: orangered;
+  position: relative;
+  margin-bottom: 5px;
+  z-index: 500; /* Menu cha có mức ưu tiên thấp hơn menu dọc */
+}
+
+nav ul {
+  padding-top: 0;
+  padding-left: 0;
+  margin: 0;
+  list-style: none;
+  height: 40px;
+}
+
+nav ul li {
+  /* display: inline-block; */
+  position: relative;
+  border-right: solid #fff 1px;
+  float: left;
+  margin: 0 0;
+  width: 150px;
+  text-align: center;
+}
+
+nav ul li a {
+  /* display: block; */
+  text-decoration: none;
+  font-size: 16px;
+  color: white;
+  padding: 0 10px;
+  line-height: 40px;
+  display: block;
+  font-variant: small-caps;
+}
+
+nav ul li a:hover {
+  color: red;
+  background: #FF0;
+  font-weight: bolder;
+}
+
+nav ul > li:hover > ul {
+  display: block;
+}
+
+/* Menu đứng */
+ul.vmenu {
+  margin: 0;
+  padding: 0;
+  width: 250px;
+  list-style: none;
+  position: absolute;
+  display: none;
+  background-color: yellow;
+}
+
+ul.vmenu li {
+  margin-top: 0;
+  border-bottom: solid 1px #fff;
+  position: relative;
+  width: 250px;
+  z-index: 1000; /* Đảm bảo menu hiển thị trên các phần tử khác */
+}
+ul.vmenu li a {
+  display: block;
+  line-height: 40px;
+  border-bottom: 1px dotted orangered;
+  text-decoration: none;
+  font-variant: small-caps;
+  color: yellow;
+  padding-left: 15px;
+  background-color: darkcyan;
+}
+
+ul.vmenu a:hover {
+  background-color: green;
+  font-weight: bolder;
+  color: #fff;
+}
+
+ul.vmenu li > ul {
+  position: absolute;
+  margin-left: 245px;
+  width: 300px;
+  color: orangered;
+  top: 0;
+  visibility: hidden;
+  list-style: none;
+  padding: 0;
+  z-index: 1000; /* Đảm bảo menu hiển thị trên các phần tử khác */
+}
+ul.vmenu li ul li {
+  border-bottom: solid 1px #fff;
+}
+
+ul.vmenu li:hover > ul {
+  visibility: visible;
+}
+
+nav .chao {
+  width: 222px;
+  position: absolute;
+  right: 25px;
+  top: 0;
+}
+
+nav .tim {
+  text-align: center;
+  width: 75px;
+  height: 40px;
+  color: #FFF;
+  background: orangered;
+  border: none;
+  margin-right: 15px;
+  line-height: 40px;
+}
+
+nav .tim:hover {
+  color: #FFF;
+  background: orangered;
+}
+
+
