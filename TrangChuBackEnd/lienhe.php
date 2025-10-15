@@ -136,11 +136,9 @@
       <article style="margin-bottom: 30px;margin-top:50px ;">
         <div class="content" style="text-align:center;">
           <h2>Liên hệ</h2>
-          <h3>Thành Viên Nhóm</h3>
-          <p>Mạc Thành Trung: MacTrung@gmail.com</p>
-          <p>Hồ Viết Trung: VietTrung@gmail.com</p>
-          <p>Phạm Thành Quang: ThanhQuang@gmail.com</p>
-          <p>Nguyễn Khánh Toàn: KhanhToan@gmail.com </p>
+          <h3>Hồ Viết Trung</h3>
+          <p>SĐT: 0962119874</p>
+          <p>Email: hvt93trung@gmail.com</p>
         </div>
       </article>
     <?php include("footer.php"); ?>
